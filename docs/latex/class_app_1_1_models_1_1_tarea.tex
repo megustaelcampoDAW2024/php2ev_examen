@@ -1,0 +1,114 @@
+\doxysection{App\textbackslash{}Models\textbackslash{}Tarea Class Reference}
+\hypertarget{class_app_1_1_models_1_1_tarea}{}\label{class_app_1_1_models_1_1_tarea}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+Inheritance diagram for App\textbackslash{}Models\textbackslash{}Tarea\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_models_1_1_tarea}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_tarea_afc55d2faebd8d78caf3aca097a46af32}{operario}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_tarea_a8b2b8e92ee5cc30316d439c16845c033}{cliente}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_tarea_ad53c92aca89e202dd71fde2606fc636f}{provincia}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_aa7565f55b0da3d7d95f1239dbc0b066e}{get\+All\+Tareas}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_tarea_ac6327478ba04819819baedb3036445ee}{get\+Tareas\+By\+Operario}} (\$user\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_tarea_a1f8533327083c63a29cab184a0bb9500}{\$table}} = \textquotesingle{}tareas\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_tarea_a641f812f4518bac0a60fb5eb89400e2f}{\$guarded}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_models_1_1_tarea_a8b2b8e92ee5cc30316d439c16845c033}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}!cliente@{cliente}}
+\index{cliente@{cliente}!App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+\doxysubsubsection{\texorpdfstring{cliente()}{cliente()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_tarea_a8b2b8e92ee5cc30316d439c16845c033} 
+App\textbackslash{}\+Models\textbackslash{}\+Tarea\+::cliente (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the cliente that owns the Tarea.
+
+\begin{DoxyReturn}{Returns}
+Belongs\+To 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_tarea_aa7565f55b0da3d7d95f1239dbc0b066e}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}!getAllTareas@{getAllTareas}}
+\index{getAllTareas@{getAllTareas}!App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+\doxysubsubsection{\texorpdfstring{getAllTareas()}{getAllTareas()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_tarea_aa7565f55b0da3d7d95f1239dbc0b066e} 
+static App\textbackslash{}\+Models\textbackslash{}\+Tarea\+::get\+All\+Tareas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get all Tareas with pagination.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_tarea_ac6327478ba04819819baedb3036445ee}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}!getTareasByOperario@{getTareasByOperario}}
+\index{getTareasByOperario@{getTareasByOperario}!App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+\doxysubsubsection{\texorpdfstring{getTareasByOperario()}{getTareasByOperario()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_tarea_ac6327478ba04819819baedb3036445ee} 
+static App\textbackslash{}\+Models\textbackslash{}\+Tarea\+::get\+Tareas\+By\+Operario (\begin{DoxyParamCaption}\item[{}]{\$user\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get Tareas by operario with pagination.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_tarea_afc55d2faebd8d78caf3aca097a46af32}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}!operario@{operario}}
+\index{operario@{operario}!App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+\doxysubsubsection{\texorpdfstring{operario()}{operario()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_tarea_afc55d2faebd8d78caf3aca097a46af32} 
+App\textbackslash{}\+Models\textbackslash{}\+Tarea\+::operario (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the operario that owns the Tarea.
+
+\begin{DoxyReturn}{Returns}
+Belongs\+To 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_tarea_ad53c92aca89e202dd71fde2606fc636f}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}!provincia@{provincia}}
+\index{provincia@{provincia}!App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+\doxysubsubsection{\texorpdfstring{provincia()}{provincia()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_tarea_ad53c92aca89e202dd71fde2606fc636f} 
+App\textbackslash{}\+Models\textbackslash{}\+Tarea\+::provincia (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the provincia that owns the Tarea.
+
+\begin{DoxyReturn}{Returns}
+Belongs\+To 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_app_1_1_models_1_1_tarea_a641f812f4518bac0a60fb5eb89400e2f}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}!\$guarded@{\$guarded}}
+\index{\$guarded@{\$guarded}!App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+\doxysubsubsection{\texorpdfstring{\$guarded}{\$guarded}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_tarea_a641f812f4518bac0a60fb5eb89400e2f} 
+App\textbackslash{}\+Models\textbackslash{}\+Tarea\+::\$guarded = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_app_1_1_models_1_1_tarea_a1f8533327083c63a29cab184a0bb9500}\index{App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}!\$table@{\$table}}
+\index{\$table@{\$table}!App\textbackslash{}Models\textbackslash{}Tarea@{App\textbackslash{}Models\textbackslash{}Tarea}}
+\doxysubsubsection{\texorpdfstring{\$table}{\$table}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_tarea_a1f8533327083c63a29cab184a0bb9500} 
+App\textbackslash{}\+Models\textbackslash{}\+Tarea\+::\$table = \textquotesingle{}tareas\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{_tarea_8php}{Tarea.\+php}}\end{DoxyCompactItemize}

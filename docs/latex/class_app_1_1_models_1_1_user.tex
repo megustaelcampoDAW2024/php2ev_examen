@@ -1,0 +1,120 @@
+\doxysection{App\textbackslash{}Models\textbackslash{}User Class Reference}
+\hypertarget{class_app_1_1_models_1_1_user}{}\label{class_app_1_1_models_1_1_user}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+Inheritance diagram for App\textbackslash{}Models\textbackslash{}User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_app_1_1_models_1_1_user}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_user_ac8a7b3254d804f0c37bc0ec8c394db90}{tareas}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_user_a45330096b7ade2e432c19c0db16f31d2}{get\+Users}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_user_a52940297f9a1d8124f0c109afb80a32f}{get\+Operarios}} ()
+\item 
+static \mbox{\hyperlink{class_app_1_1_models_1_1_user_a9887f59bdc5cc1ec2e065340e076b48d}{get\+My\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_user_afc845f919d34d162c4500b1942d322d7}{casts}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_user_a53543c7eb2aead64ac8b4587606c725c}{\$guarded}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_user_a1f25bef37dae884e548034f839fa1f63}{\$hidden}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_1_1_models_1_1_user_afc845f919d34d162c4500b1942d322d7}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}!casts@{casts}}
+\index{casts@{casts}!App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{casts()}{casts()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_user_afc845f919d34d162c4500b1942d322d7} 
+App\textbackslash{}\+Models\textbackslash{}\+User\+::casts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the attributes that should be cast.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_user_a9887f59bdc5cc1ec2e065340e076b48d}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}!getMyData@{getMyData}}
+\index{getMyData@{getMyData}!App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{getMyData()}{getMyData()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_user_a9887f59bdc5cc1ec2e065340e076b48d} 
+static App\textbackslash{}\+Models\textbackslash{}\+User\+::get\+My\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the authenticated User\textquotesingle{}s data.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_user_a52940297f9a1d8124f0c109afb80a32f}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}!getOperarios@{getOperarios}}
+\index{getOperarios@{getOperarios}!App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{getOperarios()}{getOperarios()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_user_a52940297f9a1d8124f0c109afb80a32f} 
+static App\textbackslash{}\+Models\textbackslash{}\+User\+::get\+Operarios (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get all Operarios with pagination.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_user_a45330096b7ade2e432c19c0db16f31d2}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}!getUsers@{getUsers}}
+\index{getUsers@{getUsers}!App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{getUsers()}{getUsers()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_user_a45330096b7ade2e432c19c0db16f31d2} 
+static App\textbackslash{}\+Models\textbackslash{}\+User\+::get\+Users (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get all Users with pagination.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{class_app_1_1_models_1_1_user_ac8a7b3254d804f0c37bc0ec8c394db90}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}!tareas@{tareas}}
+\index{tareas@{tareas}!App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{tareas()}{tareas()}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_user_ac8a7b3254d804f0c37bc0ec8c394db90} 
+App\textbackslash{}\+Models\textbackslash{}\+User\+::tareas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the tareas for the User.
+
+\begin{DoxyReturn}{Returns}
+Has\+Many 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_app_1_1_models_1_1_user_a53543c7eb2aead64ac8b4587606c725c}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}!\$guarded@{\$guarded}}
+\index{\$guarded@{\$guarded}!App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{\$guarded}{\$guarded}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_user_a53543c7eb2aead64ac8b4587606c725c} 
+App\textbackslash{}\+Models\textbackslash{}\+User\+::\$guarded = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_app_1_1_models_1_1_user_a1f25bef37dae884e548034f839fa1f63}\index{App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}!\$hidden@{\$hidden}}
+\index{\$hidden@{\$hidden}!App\textbackslash{}Models\textbackslash{}User@{App\textbackslash{}Models\textbackslash{}User}}
+\doxysubsubsection{\texorpdfstring{\$hidden}{\$hidden}}
+{\footnotesize\ttfamily \label{class_app_1_1_models_1_1_user_a1f25bef37dae884e548034f839fa1f63} 
+App\textbackslash{}\+Models\textbackslash{}\+User\+::\$hidden\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'password'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'remember\_token'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\mbox{\hyperlink{_user_8php}{User.\+php}}\end{DoxyCompactItemize}
