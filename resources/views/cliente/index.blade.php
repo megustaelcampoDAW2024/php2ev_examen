@@ -12,6 +12,7 @@
             <th>Cuenta Corriente</th>
             <th>Moneda</th>
             <th>Importe Mensual</th>
+            <th>Cuotas</th>
             <th class="text-center">Opciones</th>
         </tr>
     </thead>
@@ -31,6 +32,26 @@
                 <td>{{ $cliente->cuenta_corriente }}</td>
                 <td>{{ $cliente->moneda }}</td>
                 <td>{{ $cliente->importe_mensual }}</td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Emision</th>
+                                <th>Importe</th>
+                                <th>Pagado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($cliente->cuotas as $cuota)
+                                <tr>
+                                    <td>{{ $cuota->fecha_emision }}</td>
+                                    <td>{{ $cuota->importe }}</td>
+                                    <td>{{ $cuota->fecha_pago }}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </td>
                 <td class="d-flex justify-content-around">
                     <a href="{{ route("cliente.show", $cliente->id) }}" class="btn btn-outline-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
