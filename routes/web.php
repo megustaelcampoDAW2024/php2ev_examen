@@ -52,6 +52,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/user/edit/{user}', [UserController::class, 'edit'])->name('user.edit');
     Route::put('/user/update/{user}', [UserController::class, 'update'])->name('user.update');
     Route::delete('/user/destroy/{user}', [UserController::class, 'destroy'])->name('user.destroy');
+    Route::any('/user/denegar/{user}', [UserController::class, 'denegar'])->name('user.denegar');
+
 });
 
 //CuotaController

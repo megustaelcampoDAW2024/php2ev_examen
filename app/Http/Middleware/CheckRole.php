@@ -22,6 +22,11 @@ class CheckRole
             return to_route('no.permisos');
         }
 
+        //Si user->access es == 0 se redirige a la ruta permiso
+        if($user->access == 0){
+            return to_route('no.permisos');
+        }
+
         return $next($request);
     }
 }

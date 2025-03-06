@@ -34,6 +34,7 @@ class TareaController extends Controller
         if($user->rol === 'A') {
             $tareas = Tarea::getAllTareas();
         } else {
+            /// return to_route('no.permisos');
             $tareas = Tarea::getTareasByOperario($user->id);
         }
         return view('tarea.index', 

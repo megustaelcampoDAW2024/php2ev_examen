@@ -121,4 +121,15 @@ class UserController extends Controller
         $user->delete();
         return to_route('user.index')->with('status', 'Usuario eliminado correctamente');
     }
+
+    public function denegar(User $user)
+    {
+        if ($user->access == 1) {
+            $user->access = 0;
+        } else {
+            $user->access = 1;
+        }
+        $user->save();
+        return to_route('user.index')->with('status', 'Acceso actualizado correctamente');
+    }
 }

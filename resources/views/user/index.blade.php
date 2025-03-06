@@ -9,6 +9,7 @@
             <th>E-Mail</th>
             <th>Teléfono</th>
             <th>Dirección</th>
+            <th>Bloquear</th>
             <th>Rol</th>
             <th>Fecha de Creación</th>
             @if (Auth::user()->rol == 'A')
@@ -27,6 +28,9 @@
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->telefono }}</td>
                 <td>{{ $user->direccion }}</td>
+                <td>
+                    <a class="btn btn-{{ $user->access ? 'success' : 'danger' }}" href="{{ route('user.denegar', $user->id) }}">{{ $user->access ? 'Bloquear' : 'Desbloquear' }}</a>
+                </td>
                 <td>
                     @if ($user->rol == 'A')
                         <span class="badge bg-success text-white w-100" style="padding: 13px 0px">Administrador</span>
