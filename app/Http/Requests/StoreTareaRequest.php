@@ -48,4 +48,20 @@ class StoreTareaRequest extends FormRequest
             'foto' => 'nullable|file|mimes:jpg,jpeg,png|max:2048'
         ];
     }
-}
+
+    /**
+     * Configure the validator instance.
+     *
+     * @param  \Illuminate\Validation\Validator  $validator
+     * @return void
+     */
+    public function withValidator($validator)
+    {
+        $validator->after(function ($validator) {
+            if (\App\Models\Tarea::where('cliente_id', $this->cliente_id)->whereDate('created_at', now())->first()) {
+                $validator->errors()->add('same_day', 'A task with the same client and date already exists.');
+            }
+        });
+        
+    }
+}   

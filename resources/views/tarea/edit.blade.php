@@ -6,6 +6,10 @@
     <fieldset class="border p-4">
         <legend class="w-auto"><b>Formulario Modificación de Tarea</b></legend>
 
+        @error('same_day')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
+
         @if(Auth::user()->rol == 'A')
             <div class="form-group">
                 @error('cliente_id')
